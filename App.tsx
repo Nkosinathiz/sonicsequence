@@ -6,6 +6,7 @@ import { ResultsView } from "./components/ResultsView";
 import { StepIndicator } from "./components/StepIndicator";
 import { sequenceAlbum } from "./services/geminiService";
 import { Loader2, AlertCircle } from "lucide-react";
+import { Analytics } from "@vercel/analytics/next";
 
 const App: React.FC = () => {
   const [appState, setAppState] = useState<AppState>(AppState.INPUT_DETAILS);
@@ -148,6 +149,8 @@ const App: React.FC = () => {
             onReset={resetApp}
           />
         )}
+        
+         <Analytics />
 
         {appState === AppState.ERROR && (
           <div className="glass-panel p-8 rounded-xl text-center max-w-md border-red-900/50 shadow-[0_0_30px_rgba(220,38,38,0.1)]">
@@ -166,6 +169,7 @@ const App: React.FC = () => {
             </button>
           </div>
         )}
+
 
         {/* Global Google AdSense Section */}
         <div className="w-full mt-12 flex flex-col items-center animate-fade-in pb-4">
