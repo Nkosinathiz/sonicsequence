@@ -150,8 +150,6 @@ const App: React.FC = () => {
           />
         )}
         
-
-
         {appState === AppState.ERROR && (
           <div className="glass-panel p-8 rounded-xl text-center max-w-md border-red-900/50 shadow-[0_0_30px_rgba(220,38,38,0.1)]">
             <div className="flex justify-center mb-4">
