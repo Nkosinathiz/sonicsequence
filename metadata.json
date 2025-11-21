@@ -1,0 +1,5 @@
+{
+  "name": "SonicSequence",
+  "description": "AI-powered album sequencer that arranges your tracks into a cohesive narrative flow.",
+  "requestFramePermissions": []
+}
